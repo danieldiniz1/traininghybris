@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 2 de nov. de 2023 13:46:32                  ---
+ * --- Generated at 2 de nov. de 2023 18:37:50                  ---
  * ----------------------------------------------------------------
  */
 package com.yts.core.constants;
@@ -24,7 +24,17 @@ public class GeneratedYtsCoreConstants
 	}
 	public static class Attributes
 	{
-		// no constants defined.
+		public static class AbstractOrder
+		{
+			public static final String ISVALID = "isValid".intern();
+			public static final String ISVALIDBYINTERCEPT = "isValidByIntercept".intern();
+		}
+		public static class AbstractOrderEntry
+		{
+			public static final String CUSTOMDESCRIPTION = "customDescription".intern();
+			public static final String CUSTOMFIELDINTERCPTOR = "customFieldIntercptor".intern();
+			public static final String CUSTOMFIELDINTERCPTORSAVE = "customFieldIntercptorSave".intern();
+		}
 	}
 	public static class Enumerations
 	{

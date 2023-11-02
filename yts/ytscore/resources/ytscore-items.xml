@@ -30,6 +30,44 @@
     <itemtypes>
 
         <!-- Add your item definitions here -->
+        <!-- CUSTOM -->
+        <typegroup name="Order">
+
+            <itemtype code="AbstractOrder" autocreate="false" generate="false">
+                <description>Extending AbstractOrder type with additional attributes.</description>
+                <attributes>
+                    <attribute qualifier="isValid" type="boolean">
+                        <persistence type="property"/>
+                        <defaultvalue>Boolean.FALSE</defaultvalue>
+                    </attribute>
+                    <attribute qualifier="isValidByIntercept" type="boolean">
+                        <persistence type="property"/>
+                        <defaultvalue>Boolean.FALSE</defaultvalue>
+                    </attribute>
+                </attributes>
+            </itemtype>
+
+            <itemtype code="AbstractOrderEntry" autocreate="false" generate="false">
+                <description>Extending AbstractOrderEntry type with additional attributes.</description>
+                <attributes>
+                    <attribute qualifier="customDescription" type="java.lang.String">
+                        <description>The point of service to deliver to/collect from.</description>
+                        <persistence type="property"/>
+                        <defaultvalue>customize description</defaultvalue>
+                    </attribute>
+                    <attribute qualifier="customFieldIntercptor" type="java.lang.String">
+                        <description>value of to change by intercptor</description>
+                        <persistence type="property"/>
+                    </attribute>
+                    <attribute qualifier="customFieldIntercptorSave" type="boolean">
+                        <description>value of to change by intercptor</description>
+                        <persistence type="property"/>
+                        <defaultvalue>Boolean.FALSE</defaultvalue>
+                    </attribute>
+                </attributes>
+            </itemtype>
+        </typegroup>
+
 
 
         <!-- TypeGroups are for structure of this file only -->
