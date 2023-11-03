@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 2 de nov. de 2023 18:37:50                  ---
+ * --- Generated at 2 de nov. de 2023 21:53:34                  ---
  * ----------------------------------------------------------------
  */
 package com.yts.fulfilmentprocess.constants;

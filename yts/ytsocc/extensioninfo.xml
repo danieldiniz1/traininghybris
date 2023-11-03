@@ -11,7 +11,9 @@
                 		
         
         <requires-extension name="commercewebservices"/>
-                		
+        <requires-extension name="ytsfacades"/>
+<!--        <requires-extension name="swaggerintegration"/>-->
+
         
         <coremodule generated="true" manager="com.yts.custom.jalo.YtsoccManager" packageroot="com.yts.custom"/>
                 		

@@ -182,4 +182,9 @@
 	</bean>
 
 	<bean id="genderData" class="com.yts.facades.product.data.GenderData" scope="prototype"/>
+
+	<alias name="defaultYtsCartFacade" alias="ytsCartFacade"/>
+	<bean id="defaultYtsCartFacade" class="com.yts.facades.cart.impl.DefaultYtsCartFacade"/>
+
+
 </beans>

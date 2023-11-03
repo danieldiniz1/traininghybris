@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 2 de nov. de 2023 18:37:50                  ---
+ * --- Generated at 2 de nov. de 2023 21:53:34                  ---
  * ----------------------------------------------------------------
  */
 package com.yts.core.constants;
@@ -34,6 +34,10 @@ public class GeneratedYtsCoreConstants
 			public static final String CUSTOMDESCRIPTION = "customDescription".intern();
 			public static final String CUSTOMFIELDINTERCPTOR = "customFieldIntercptor".intern();
 			public static final String CUSTOMFIELDINTERCPTORSAVE = "customFieldIntercptorSave".intern();
+		}
+		public static class Cart
+		{
+			public static final String DATEISSAVE = "dateIsSave".intern();
 		}
 	}
 	public static class Enumerations

@@ -15,4 +15,16 @@
 
     <context:annotation-config/>
 
+	<bean parent="fieldSetLevelMapping" id="ytsCartFieldSetLevelMapping">
+		<property name="dtoClass"
+				  value="de.hybris.platform.commercewebservicescommons.dto.order.CartWsDTO"/>
+		<property name="levelMapping">
+			<map>
+				<entry key="BASIC" value="name"/>
+				<entry key="DEFAULT" value="name,value"/>
+				<entry key="FULL" value="name,value,flag"/>
+			</map>
+		</property>
+	</bean>
+
 </beans>

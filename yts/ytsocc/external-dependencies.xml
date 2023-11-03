@@ -8,4 +8,8 @@
 	<artifactId>ytsocc</artifactId>
 	<version>2205.5</version>
 	<packaging>jar</packaging>
+
+	<dependencies>
+
+	</dependencies>
 </project>

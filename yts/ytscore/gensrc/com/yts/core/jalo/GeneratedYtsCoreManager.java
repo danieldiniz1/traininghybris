@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 2 de nov. de 2023 18:37:50                  ---
+ * --- Generated at 2 de nov. de 2023 21:53:34                  ---
  * ----------------------------------------------------------------
  */
 package com.yts.core.jalo;
@@ -20,9 +20,11 @@ import de.hybris.platform.jalo.SessionContext;
 import de.hybris.platform.jalo.extension.Extension;
 import de.hybris.platform.jalo.order.AbstractOrder;
 import de.hybris.platform.jalo.order.AbstractOrderEntry;
+import de.hybris.platform.jalo.order.Cart;
 import de.hybris.platform.jalo.type.ComposedType;
 import de.hybris.platform.jalo.type.JaloGenericCreationException;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -45,6 +47,9 @@ public abstract class GeneratedYtsCoreManager extends Extension
 		tmp.put("customFieldIntercptor", AttributeMode.INITIAL);
 		tmp.put("customFieldIntercptorSave", AttributeMode.INITIAL);
 		ttmp.put("de.hybris.platform.jalo.order.AbstractOrderEntry", Collections.unmodifiableMap(tmp));
+		tmp = new HashMap<String, AttributeMode>();
+		tmp.put("dateIsSave", AttributeMode.INITIAL);
+		ttmp.put("de.hybris.platform.jalo.order.Cart", Collections.unmodifiableMap(tmp));
 		DEFAULT_INITIAL_ATTRIBUTES = ttmp;
 	}
 	@Override
@@ -306,6 +311,42 @@ public abstract class GeneratedYtsCoreManager extends Extension
 	public void setCustomFieldIntercptorSave(final AbstractOrderEntry item, final boolean value)
 	{
 		setCustomFieldIntercptorSave( getSession().getSessionContext(), item, value );
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Cart.dateIsSave</code> attribute.
+	 * @return the dateIsSave - The date/time when the cart was saved.
+	 */
+	public Date getDateIsSave(final SessionContext ctx, final Cart item)
+	{
+		return (Date)item.getProperty( ctx, YtsCoreConstants.Attributes.Cart.DATEISSAVE);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Cart.dateIsSave</code> attribute.
+	 * @return the dateIsSave - The date/time when the cart was saved.
+	 */
+	public Date getDateIsSave(final Cart item)
+	{
+		return getDateIsSave( getSession().getSessionContext(), item );
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of the <code>Cart.dateIsSave</code> attribute. 
+	 * @param value the dateIsSave - The date/time when the cart was saved.
+	 */
+	public void setDateIsSave(final SessionContext ctx, final Cart item, final Date value)
+	{
+		item.setProperty(ctx, YtsCoreConstants.Attributes.Cart.DATEISSAVE,value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of the <code>Cart.dateIsSave</code> attribute. 
+	 * @param value the dateIsSave - The date/time when the cart was saved.
+	 */
+	public void setDateIsSave(final Cart item, final Date value)
+	{
+		setDateIsSave( getSession().getSessionContext(), item, value );
 	}
 	
 	@Override

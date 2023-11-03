@@ -17,4 +17,9 @@
 	</bean>
 	-->
 
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.order.CartWsDTO">
+		<property name="value" type="double"/>
+		<property name="flag" type="boolean"/>
+	</bean>
+
 </beans>
